@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0;
+        }
+        header{
+            background-color: wheat;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        nav{
+            background-color: #daab55;
+            padding: 3px;
+            box-shadow: 2px 3px 5px 1px #36240359;
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            background-color: wheat;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        article{
+            background-color: #daab55;
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color: #d39014;;
+            padding: 5px;
+        }
+
+        footer{
+            background-color: darkslategray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+            <a href="">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Assuntos</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat sit veritatis odit? Saepe esse, pariatur recusandae, aspernatur consequatur temporibus nobis odit, odio rerum ipsam possimus quasi doloremque harum natus nulla?
+            </p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Atigos sobre o Brasil</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores sequi doloribus est temporibus aspernatur ea fugit quasi illo odit rem nobis dignissimos vero dolorum impedit, quis, fugiat libero quibusdam.
+                </p>
+                <aside>
+                    <p>Artigos relacionados</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por mim
+    </footer>
+</body>
+</html>

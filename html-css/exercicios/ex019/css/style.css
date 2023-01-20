@@ -1,0 +1,44 @@
+body{
+    background-color: #e4fdfd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #11da11;
+}
+
+h2{
+    color: #15b93e;
+}
+
+p{
+    font-size: 19px;
+    font-family: monospace;
+    color: #4b4848;
+    text-align: justify;
+}
+
+h1#principal{
+    background-color: #11da11;;
+    text-align: center;
+    color: #e3e3ff;
+}
+
+h2.basico{
+    color: #15b93e;
+}
+h2.intermediario{
+    color: #bdbd02;
+}
+h2.avancado{
+    color: #fc2b2b;
+}
+.destaque{
+    background-color: rgb(235, 247, 213);
+}
+.html{
+    text-align: center;
+}
+.css{
+    text-align: center;
+}
