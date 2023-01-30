@@ -12,10 +12,16 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
         }
         caption{
             font-size: 20px;
             font-weight: bold;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: lightslategrey;
         }
         thead tr th:nth-child(2){
             width: 50px;
