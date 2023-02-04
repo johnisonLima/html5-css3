@@ -1,0 +1,124 @@
+/* 
+    TODAS AS DEMAIS MEDIAS
+*/
+
+:root{
+  --xs: 575.98px;    /* X-Small  (telefones retrato, menos de 575.98px) */
+  --sm: 767.98px;    /* Small    (telefones paisagísticos, menos de 767.98px) */
+  --md: 991.98px;    /* Medium   (tablets, menos de 991.98px) */
+  --lg: 1199.98px;   /* Large    (desktops, menos de 1199.98px) */
+  --xl: 1399.98px;   /* X-Large  (grandes, desktops, menos de 1399.98px */
+  --xxl: infinit; /* O ponto de interrupção xxl não tem limite superior em sua largura */
+}
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid #000;
+    }
+    main h1{
+        text-shadow: none;
+        color: #000;
+    }
+    main::after{
+        content: ' Essa impressão foi feita atraves de Media Query';
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#impressora{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 575.98px){
+    body{
+        background-image: url('../imagens/back-phone.jpg');
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#phone{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px){
+    h1::after{
+        content: ' sm';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px){
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.98px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#desktop{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.98px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#televisão{
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    img#phone,
+    img#tablet,
+    img#impressora,
+    img#desktop,
+    img#televisão {
+        display: none;
+    }
+    img#televisão{
+        display: block;
+    }
+}
