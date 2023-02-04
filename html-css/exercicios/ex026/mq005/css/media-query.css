@@ -1,0 +1,30 @@
+/* 
+    TODAS AS DEMAIS MEDIAS
+*/
+
+:root{
+    --xs: 575.98px;    /* X-Small  (telefones retrato, menos de 575.98px) */
+    --sm: 767.98px;    /* Small    (telefones paisagísticos, menos de 767.98px) */
+    --md: 991.98px;    /* Medium   (tablets, menos de 991.98px) */
+    --lg: 1199.98px;   /* Large    (desktops, menos de 1199.98px) */
+    --xl: 1399.98px;   /* X-Large  (grandes, desktops, menos de 1399.98px */
+    --xxl: infinit; /* O ponto de interrupção xxl não tem limite superior em sua largura */
+}
+
+@media screen and (min-width: 768px){
+    .material-icons{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu{
+        padding-left: 5vw;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+    main{
+        max-width: 1000px;
+    }
+}
